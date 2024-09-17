@@ -14,6 +14,12 @@
 ### Requirements to train the CNN model
 · pip install tensorflow numpy matplotlib scikit-learn
 
+## 3. Results
+Here you'll see some examples of the screen recorder trying to identify what's the activity an user during the footage.
+
+![Bar chart of identified classes](images/Class distribution.png)
+![Pie chart of type of activity](images/Pie chart.png)
+
 ## 3. Repositories 
 · /Screen-recorder: Python code to create a screen recorder with cv2 library
 · /CNNmodel: Python code to train a CNN model to identify an application/web, using the screen recorder as training samples

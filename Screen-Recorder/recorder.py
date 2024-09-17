@@ -34,7 +34,8 @@ def create_video_object(save_file):
     # When we finished, clean all windows
     clean(save_file, output)
     show_plot(class_counts,time_elapsed)
-    
+    show_pie_plot(class_counts,time_elapsed)
+
 def starting_recording(output, save_file):
     model = load_model('multiclass_model.h5')
     print(model.get_config())
@@ -108,7 +109,7 @@ def show_plot(class_counts, time_elapsed):
 
     # Create the horizontal bar plot
     bars = plt.barh(sorted_labels, sorted_values, color=sorted_colors)
-    plt.xlabel('Percentage')
+    plt.xlabel('Percentage of use')
     plt.ylabel('Class')
     plt.suptitle(f'Class Distribution')
     plt.title(f'Time elapsed: {round(time_elapsed/60, 2)} minutes')
@@ -118,8 +119,38 @@ def show_plot(class_counts, time_elapsed):
     red_patch = mpatches.Patch(color='red', label='Working material')
     green_patch = mpatches.Patch(color='green', label='Enterteinment')
 
-    plt.legend(handles=[blue_patch, red_patch, green_patch], loc='upper right')
+    plt.legend(handles=[blue_patch, red_patch, green_patch], loc='lower right')
 
+    plt.show()
+
+def show_pie_plot(class_counts, time_elapsed):
+    # Calculate the percentages for each class
+    total_counts = sum(class_counts)
+    percentages = [(count / total_counts) * 100 for count in class_counts]
+    
+    # Create the labels and colors
+    labels = ["ChatGPT", "Campus Virtual", "Github", "Gmail", "Instagram", "Outlook", "Phind", "Spotify", "Twitch", "Twitter", "Visual Studio", "Youtube"]
+    colors = ["blue", "red", "red", "red", "green", "red", "blue", "green", "green", "green", "red", "green"]
+
+    # Calculate the sum of percentages for each color
+    color_percentages = {}
+    for label, percentage, color in zip(labels, percentages, colors):
+        if color not in color_percentages:
+            color_percentages[color] = 0
+        color_percentages[color] += percentage
+
+    # Create custom labels for the pie chart
+    custom_labels = {
+        "blue": "Artificial Intelligence",
+        "red": "Working Material",
+        "green": "Entertainment"
+    }
+
+    # Create the pie chart
+    pie_labels = [custom_labels[color] for color in color_percentages.keys()]
+    pie_values = list(color_percentages.values())
+    plt.pie(pie_values, labels=pie_labels, autopct='%1.1f%%')
+    plt.title(f'Type of activity distribution')
     plt.show()
 
 if __name__ == "__main__":
