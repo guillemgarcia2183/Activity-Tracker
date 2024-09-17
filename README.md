@@ -1,4 +1,5 @@
-# Screen-Recorder
+# Screen Recorder to identify an user activity 
+## Last update: September 2024
 
 ## 1. Objectives of the project
 1. Code in python a screen recorder with cv2 library.
@@ -29,4 +30,3 @@ Github user: guillemgarcia2183
 
 E-mail: garcia.guillem.dausa@gmail.com
 
-September 2024
