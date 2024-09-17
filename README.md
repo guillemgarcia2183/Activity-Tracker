@@ -10,6 +10,7 @@
 ## 2. Requirements
 ### Requirements to create the recorder in python 
 · pip install opencv-python
+
 · pip install pyautogui
 
 ### Requirements to train the CNN model
