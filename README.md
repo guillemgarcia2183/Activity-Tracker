@@ -24,6 +24,9 @@
 
 ## Participants
 Guillem Garcia Dausà 
+
 Github user: guillemgarcia2183
+
 E-mail: garcia.guillem.dausa@gmail.com
+
 September 2024
