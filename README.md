@@ -1,7 +1,7 @@
 # Screen Recorder to identify an user activity 
 ## Last update: September 2024
 
-## 1. Objectives of the project
+## 1. Objectives
 1. Code in python a screen recorder with cv2 library.
 2. Code a DL algorithm (CNN) to identify which application/web is using an user.
 3. Use the recoder and the trained model to identify what I'm using (Working material, Social media, etc.) - Visualize results.
