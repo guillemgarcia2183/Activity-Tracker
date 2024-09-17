@@ -15,8 +15,10 @@
 · pip install tensorflow numpy matplotlib scikit-learn
 
 ## 3. Repositories 
-· /Screen-recorder: Python code to create a screen recorder with cv2 library
-· /CNNmodel: Python code to train a CNN model to identify an application/web, using the screen recorder as training samples
+· /Screen-recorder: Python code to create a screen recorder with cv2 library.
+
+· /CNNmodel: Python code to train a CNN model to identify an application/web, using the screen recorder as training samples.
+
 · /Create_Training: Make the training folders. Input: mp4 archives, Output: Folders frame per frame. 
 
 
