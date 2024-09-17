@@ -1,0 +1,3 @@
+# .gitignore
+/CNN model/multiclass_model.h5
+multiclass_model.h5
