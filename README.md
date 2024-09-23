@@ -1,4 +1,4 @@
-# Screen Recorder to identify an user activity 
+# Activity Tracker: Screen Recording and Deep Learning for User Behavior Detection
 ## Last update: September 2024
 
 ## 1. Objectives
