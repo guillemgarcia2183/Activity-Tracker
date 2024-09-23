@@ -81,7 +81,7 @@ def starting_recording(output, save_file):
             break
         
         # Wait to next frame
-        #time.sleep(1)
+        time.sleep(1)
     time_elapsed = time.time() - initial_time
     return class_counts, time_elapsed
 
