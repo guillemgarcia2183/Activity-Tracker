@@ -10,15 +10,17 @@
 ## 2. Requirements
 ### Python Screen Recorder Requirements
 To capture the screen, you'll need the following libraries:
+```
+pip install opencv-python
 
-· pip install opencv-python
-
-· pip install pyautogui
+pip install pyautogui
+```
 
 ### CNN Model Training Requirements
 To train a Convolutional Neural Network (CNN) model, install these dependencies:
-
-· pip install tensorflow numpy matplotlib scikit-learn
+```
+pip install tensorflow numpy matplotlib scikit-learn
+```
 
 ## 3. Usage and Results
 This section will demonstrate examples of how the screen recorder and CNN model classify user activities during the screen capture.
