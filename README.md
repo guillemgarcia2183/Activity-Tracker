@@ -26,8 +26,8 @@ pip install tensorflow numpy matplotlib scikit-learn
 ## 3. Usage and Results
 This section will demonstrate examples of how the screen recorder and CNN model classify user activities during the screen capture.
 
-<img src="./images/1.png" alt="Bar chart of identified classes" width="800"/>
-<img src="./images/2.png" alt="Pie chart of type of activity" width="800"/>
+<img src="./images/1.png" alt="Bar chart of identified classes" width="1200"/>
+<img src="./images/2.png" alt="Pie chart of type of activity" width="1200"/>
 
 ## 3. Repositories 
 · /Screen-recorder: Contains the Python code to create a screen recorder using the cv2 library.
