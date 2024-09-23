@@ -1,3 +1,6 @@
 # .gitignore
 /CNN model/multiclass_model.h5
+/CNN model/training_samples
+/Create_Training/training_samples
 /Screen-Recorder/multiclass_model.h5
+/Screen-Recorder/recordings

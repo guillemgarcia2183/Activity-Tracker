@@ -81,7 +81,7 @@ def starting_recording(output, save_file):
             break
         
         # Wait to next frame
-        time.sleep(1)
+        #time.sleep(1)
     time_elapsed = time.time() - initial_time
     return class_counts, time_elapsed
 
@@ -97,19 +97,18 @@ def clean(save_file, output):
 
 def show_plot(class_counts, time_elapsed):
     # Calculate the percentages for each class
-    total_counts = sum(class_counts)
-    percentages = [(count / total_counts) * 100 for count in class_counts]
-    
+    distribution = [(count)/60 for count in class_counts]
+
     # Create the bar plot
-    labels = ["ChatGPT", "Campus Virtual", "Github", "Gmail", "Instagram", "Outlook", "Phind", "Spotify", "Twitch", "Twitter", "Visual Studio", "Youtube"]
-    colors = ["blue", "red", "red", "red", "green", "red", "blue", "green", "green", "green", "red", "green"]
+    labels = ["ChatGPT", "Campus Virtual", "Github", "Gmail", "Outlook", "Phind", "Spotify", "Twitch", "Twitter", "Visual Studio", "Youtube"]
+    colors = ["blue", "red", "red", "red", "red", "blue", "green", "green", "green", "red", "green"]
 
     # Sort the labels and values in descending order of percentages
-    sorted_labels, sorted_values, sorted_colors  = zip(*sorted(zip(labels, percentages, colors), key=lambda x: x[1], reverse=False))
+    sorted_labels, sorted_values, sorted_colors  = zip(*sorted(zip(labels, distribution, colors), key=lambda x: x[1], reverse=False))
 
     # Create the horizontal bar plot
     bars = plt.barh(sorted_labels, sorted_values, color=sorted_colors)
-    plt.xlabel('Percentage of use')
+    plt.xlabel('Minutes used')
     plt.ylabel('Class')
     plt.suptitle(f'Class Distribution')
     plt.title(f'Time elapsed: {round(time_elapsed/60, 2)} minutes')
@@ -129,8 +128,8 @@ def show_pie_plot(class_counts, time_elapsed):
     percentages = [(count / total_counts) * 100 for count in class_counts]
     
     # Create the labels and colors
-    labels = ["ChatGPT", "Campus Virtual", "Github", "Gmail", "Instagram", "Outlook", "Phind", "Spotify", "Twitch", "Twitter", "Visual Studio", "Youtube"]
-    colors = ["blue", "red", "red", "red", "green", "red", "blue", "green", "green", "green", "red", "green"]
+    labels = ["ChatGPT", "Campus Virtual", "Github", "Gmail", "Outlook", "Phind", "Spotify", "Twitch", "Twitter", "Visual Studio", "Youtube"]
+    colors = ["blue", "red", "red", "red", "red", "blue", "green", "green", "green", "red", "green"]
 
     # Calculate the sum of percentages for each color
     color_percentages = {}
@@ -157,6 +156,8 @@ if __name__ == "__main__":
     print("===========================TRACKING WITH A SCREEN RECORDER===========================")
     option = input("Before start, Do you wanna save the recording? \nNo: 0, Yes: 1 \nType your answer:")
     print("=====================================================================================")
+    print("The record will begin in 3 seconds...")
+    time.sleep(3)
     if option == "1":
         create_video_object(True)
     else:
