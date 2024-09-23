@@ -1,40 +1,45 @@
-# Screen Recorder to identify an user activity 
-## Last update: September 2024
+# Activity Tracker: Screen Recording and Deep Learning for User Behavior Detection
+
+**Last Updated:** September 2024
 
 ## 1. Objectives
-1. Code in python a screen recorder with cv2 library.
-2. Code a DL algorithm (CNN) to identify which application/web is using an user.
-3. Use the recoder and the trained model to identify what I'm using (Working material, Social media, etc.) - Visualize results.
-4. Do an API version of the code.
+1. Implement a screen recorder using Python's cv2 library to capture the user's screen activity.
+2. Develop a deep learning (CNN) model to classify and identify which application or website the user is interacting with (e.g., work-related tools, social media, etc.).
+3. Combine the screen recorder with the trained model to analyze and detect user activity in real-time and provide visualized results.
+4. Develop an API version of the code for easy integration and usage.
 
 ## 2. Requirements
-### Requirements to create the recorder in python 
-· pip install opencv-python
+### Python Screen Recorder Requirements
+To capture the screen, you'll need the following libraries:
+```
+pip install opencv-python
 
-· pip install pyautogui
+pip install pyautogui
+```
 
-### Requirements to train the CNN model
-· pip install tensorflow numpy matplotlib scikit-learn
+### CNN Model Training Requirements
+To train a Convolutional Neural Network (CNN) model, install these dependencies:
+```
+pip install tensorflow numpy matplotlib scikit-learn
+```
 
-## 3. Results
-Here you'll see some examples of the screen recorder trying to identify what's the activity an user during the footage.
+## 3. Usage and Results
+This section will demonstrate examples of how the screen recorder and CNN model classify user activities during the screen capture.
 
 ![Bar chart of identified classes](./images/1.png)
 
 ![Pie chart of type of activity](./images/2.png)
 
 ## 3. Repositories 
-· /Screen-recorder: Python code to create a screen recorder with cv2 library.
+· /Screen-recorder: Contains the Python code to create a screen recorder using the cv2 library.
 
-· /CNNmodel: Python code to train a CNN model to identify an application/web, using the screen recorder as training samples.
+· /CNNmodel: Code for training the CNN model to classify applications or websites using recorded screen samples.
 
-· /Create_Training: Make the training folders. Input: mp4 archives, Output: Folders frame per frame. 
+· /Create_Training: Script to process screen recordings into training data. Takes .mp4 files as input and outputs frame-by-frame folders for CNN training.
 
 
 ## Participants
-Guillem Garcia Dausà 
+Guillem Garcia Dausà (guillemgarcia2183)
 
-Github user: guillemgarcia2183
-
-E-mail: garcia.guillem.dausa@gmail.com
+Contact e-mail: garcia.guillem.dausa@gmail.com
 
