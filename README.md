@@ -46,6 +46,7 @@ This section will demonstrate examples of how the screen recorder and CNN model 
 
 · /Create_Training: Script to process screen recordings into training data. Takes .mp4 files as input and outputs frame-by-frame folders for CNN training.
 
+· /Screen-recorder-Interface: Final update of Screen recorder. It contains an interface to show it all more aesthetical.
 
 ## Participants
 Guillem Garcia Dausà (guillemgarcia2183)

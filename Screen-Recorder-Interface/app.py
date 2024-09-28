@@ -17,8 +17,6 @@ import queue
 SCREEN_SIZE = (1920, 1080)  # PC resolution size
 FPS = 20.0
 
-
-
 class RecorderGUI:
     def __init__(self, master):
         self.master = master
@@ -152,7 +150,7 @@ class RecorderGUI:
         # Calculate the percentages for each class
         total_counts = sum(class_counts)
         percentages = [(count / total_counts) * 100 for count in class_counts]
-
+        
         # Create the labels and colors
         labels = ["ChatGPT", "Campus Virtual", "Github", "Gmail", "Outlook", "Phind", "Spotify", "Twitch", "Twitter", "Visual Studio", "Youtube"]
         colors = ["blue", "red", "red", "red", "red", "blue", "green", "green", "green", "red", "green"]
@@ -174,7 +172,7 @@ class RecorderGUI:
         # Create the pie chart
         pie_labels = [custom_labels[color] for color in color_percentages.keys()]
         pie_values = list(color_percentages.values())
-        plt.pie(pie_values, labels=pie_labels, autopct='%1.1f%%')
+        plt.pie(pie_values, labels=pie_labels, colors=list(color_percentages.keys()), autopct='%1.1f%%')
         plt.title(f'Type of activity distribution')
         plt.show()
 
