@@ -23,7 +23,17 @@ To train a Convolutional Neural Network (CNN) model, install these dependencies:
 pip install tensorflow numpy matplotlib scikit-learn
 ```
 
-## 3. Usage and Results
+### Interface Requirements
+```
+pip install tkinter
+```
+
+## 3. How to use it 
+To get started, simply run /Screen-Recorder-Interface/app.py (ensure you have your pre-trained CNN model ready). The application provides an intuitive interface where you can manage the screen recording. You will have the option to save the recording and access two buttons: one to start and one to stop the recording.
+
+<img src="./images/3.png" alt="Interface of the application" width="1200"/>
+
+## 4. Usage and Results
 This section will demonstrate examples of how the screen recorder and CNN model classify user activities during the screen capture.
 
 <img src="./images/1.png" alt="Bar chart of identified classes" width="1200"/>
