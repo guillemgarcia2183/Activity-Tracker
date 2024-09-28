@@ -6,7 +6,7 @@
 1. Implement a screen recorder using Python's cv2 library to capture the user's screen activity.
 2. Develop a deep learning (CNN) model to classify and identify which application or website the user is interacting with (e.g., work-related tools, social media, etc.).
 3. Combine the screen recorder with the trained model to analyze and detect user activity in real-time and provide visualized results.
-4. Develop an API version of the code for easy integration and usage.
+4. Develop an Interface for easy integration and usage.
 
 ## 2. Requirements
 ### Python Screen Recorder Requirements
