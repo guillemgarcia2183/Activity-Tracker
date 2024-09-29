@@ -34,7 +34,7 @@ To get started, simply run /Screen-Recorder-Interface/app.py (ensure you have yo
 <img src="./images/3.png" alt="Interface of the application" width="1200"/>
 
 ## 4. Usage and Results
-This section will demonstrate examples of how the screen recorder and CNN model classify user activities during the screen capture.
+This section will demonstrate examples of how the screen recorder and CNN model (~500 images trained per class) classify user activities during the screen capture.
 
 <img src="./images/1.png" alt="Bar chart of identified classes" width="1200"/>
 <img src="./images/2.png" alt="Pie chart of type of activity" width="1200"/>
