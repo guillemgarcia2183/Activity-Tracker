@@ -39,7 +39,7 @@ This section will demonstrate examples of how the screen recorder and CNN model 
 <img src="./images/1.png" alt="Bar chart of identified classes" width="1200"/>
 <img src="./images/2.png" alt="Pie chart of type of activity" width="1200"/>
 
-## 3. Repositories 
+## 5. Repositories 
 · /Screen-recorder: Contains the Python code to create a screen recorder using the cv2 library.
 
 · /CNNmodel: Code for training the CNN model to classify applications or websites using recorded screen samples.
