@@ -1,6 +1,6 @@
 # Activity Tracker: Screen Recording and Deep Learning for User Behavior Detection
 
-**Last Updated:** September 2024
+**Last Update:** September 2024
 
 ## 1. Objectives
 1. Implement a screen recorder using Python's cv2 library to capture the user's screen activity.
