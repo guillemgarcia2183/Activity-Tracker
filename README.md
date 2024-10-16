@@ -53,7 +53,7 @@ This section will demonstrate examples of how the screen recorder and CNN model 
 · /Screen-recorder-Interface: Final update of Screen recorder. It contains an interface to show it all more aesthetical.
 
 ## Participants
-Guillem Garcia Dausà (guillemgarcia2183)
+Guillem Garcia (guillemgarcia2183)
 
 Contact e-mail: garcia.guillem.dausa@gmail.com
 
