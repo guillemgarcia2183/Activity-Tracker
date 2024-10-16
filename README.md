@@ -1,6 +1,6 @@
 # Activity Tracker: Screen Recording and Deep Learning for User Behavior Detection
 
-**Last Update:** September 2024
+**Last Update:** October 2024
 
 ## 1. Objectives
 1. Implement a screen recorder using Python's cv2 library to capture the user's screen activity.
@@ -9,6 +9,8 @@
 4. Develop an Interface for easy integration and usage.
 
 ## 2. Requirements
+If you want to create your own code or modify it, you'll need to archive the following requirements.
+
 ### Python Screen Recorder Requirements
 To capture the screen, you'll need the following libraries:
 ```
@@ -29,7 +31,9 @@ pip install tkinter
 ```
 
 ## 3. How to use it 
-To get started, simply run /Screen-Recorder-Interface/app.py (ensure you have your pre-trained CNN model ready). The application provides an intuitive interface where you can manage the screen recording. You will have the option to save the recording and access two buttons: one to start and one to stop the recording.
+You have only to download the zip in Realise section and run recorder.exe. It includes also a trained CNN model, because it's mandatorial for running the app. 
+
+recorder.exe looks similar to the following picture:
 
 <img src="./images/3.png" alt="Interface of the application" width="1200"/>
 

@@ -6,11 +6,14 @@ import os
 import win32gui
 import win32con
 import matplotlib.pyplot as plt
+
+import matplotlib
+matplotlib.use('TkAgg')
+
 from keras.models import load_model
 import matplotlib.patches as mpatches
 import tkinter as tk
 from threading import Thread
-import atexit
 import queue
 
 # Display screen resolution
@@ -55,7 +58,7 @@ class RecorderGUI:
             self.save_button.config(text="Save Recording: Disabled")
 
     def create_video_object(self, save_file):
-        model = load_model('multiclass_model.h5')
+        model = load_model('model/multiclass_model.h5')
         class_counts = [0] * model.output_shape[1]  # Initialize counts for each class
         minimized = False
         initial_time = time.time()
@@ -145,6 +148,7 @@ class RecorderGUI:
         plt.legend(handles=[blue_patch, red_patch, green_patch], loc='lower right')
 
         plt.show()
+        #plt.savefig('Class_Distribution.png')
 
     def show_pie_plot(self, class_counts, time_elapsed):
         # Calculate the percentages for each class
@@ -175,6 +179,7 @@ class RecorderGUI:
         plt.pie(pie_values, labels=pie_labels, colors=list(color_percentages.keys()), autopct='%1.1f%%')
         plt.title(f'Type of activity distribution')
         plt.show()
+        #plt.savefig('Type_of_activity_distribution.png')
 
 root = tk.Tk()
 my_gui = RecorderGUI(root)
