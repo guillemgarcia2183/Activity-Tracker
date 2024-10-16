@@ -31,7 +31,7 @@ pip install tkinter
 ```
 
 ## 3. How to use it 
-You have only to download the zip in Realise section and run recorder.exe. It includes also a trained CNN model, because it's mandatorial for running the app 
+You have only to download the zip in Realise section and run recorder.exe. It includes also a trained CNN model, because it's mandatorial for running the app. 
 
 recorder.exe looks similar to the following picture:
 
